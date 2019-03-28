@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="46px" viewBox="0 0 35 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>maps-and-flags</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-291.000000, -829.000000)" stroke="#000000" stroke-width="2">
+            <g id="maps-and-flags" transform="translate(292.000000, 830.000000)">
+                <ellipse id="Oval" fill="#B09C9B" cx="16.5" cy="38.5" rx="16.5" ry="5.5"></ellipse>
+                <path d="M31.1142857,14.2810867 C31.1142857,25.7164878 18.3297248,36.3073158 18.3297248,36.3073158 C17.5827271,36.9261328 16.3602046,36.9261328 15.6131323,36.3073158 C15.6131323,36.3073158 2.82857143,25.7164878 2.82857143,14.2810867 C2.82857143,6.39384051 9.16058247,0 16.9714658,0 C24.7823492,0 31.1142857,6.39391573 31.1142857,14.2810867 Z" id="Path" fill="#FECC91" fill-rule="nonzero"></path>
+                <path d="M16.9714286,20.7428571 C12.8122351,20.7428571 9.42857143,17.5705984 9.42857143,13.6714286 C9.42857143,9.7722587 12.812314,6.6 16.9714286,6.6 C21.1305431,6.6 24.5142857,9.7722587 24.5142857,13.6714286 C24.5142857,17.5705984 21.1304641,20.7428571 16.9714286,20.7428571 Z" id="Path" fill="#FFADC2" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
