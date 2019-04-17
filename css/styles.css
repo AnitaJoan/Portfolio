@@ -590,7 +590,9 @@ ABOUT SECTION
   max-width: 57px;
 }
 
-
+.myprocess{
+  padding: 10% 12%;
+}
 
 
 .myprocess h2{
@@ -598,6 +600,10 @@ ABOUT SECTION
 }
 .myprocess p{
   text-align: left;
+}
+
+.doublediamond{
+  width: 90%;
 }
 
 /*****************
