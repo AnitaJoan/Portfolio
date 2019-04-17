@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link href="https://fonts.googleapis.com/css?family=Lato:700, 900|Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700, 900|Lora" rel="stylesheet">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,23 +24,28 @@
   <section class="main-banner">
     <header>
       <div class="container">
-        <img class="logo" src="/images/Logo_white_30.svg"/>
-        <nav>
-          <ul>
-            <li><a class="nav hvr-bob" href="#work">Work</a></li>
-            <li><a class="nav hvr-bob" href="#about">About</a></li>
-            <li><a class="nav hvr-bob" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+          <div class="logo" onclick="location.href='../'">
+            <img src="/images/Logo_white_30.svg"/>
+          </div>
+          
+        
+          <nav>
+            <ul>
+              <li><a class="nav hvr-bob" href="/index.html"><i class="fas fa-home"></i></a></li>
+              <li><a class="nav hvr-bob" href="#work">Work</a></li>
+              <li><a class="nav hvr-bob" href="#about">About</a></li>
+              <li><a class="nav hvr-bob" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+         </div>
     </header>
 
     <div class="intro">
       <img class= "headshot" src="images/me.jpg" alt="Photo of Anita">
       <h1>Hello, I'm Anita</h1>
       <h2>Junior UX Designer</h2>
-      <p>I am a UX designer seeking to empower others to learn and grow. I hope to help people achieve their every goal in life with smooth, crystal clear experience designs. </p>
-      <a class="button hvr-bob" href='#work'>See recent work</a>
+      <p>I am a UX designer seeking to empower others to learn and grow. I am fascinated by what makes people engage with learning and drives them to take action. I hope to help people achieve their every goal in life with smooth, crystal clear experience designs. </p>
+      <a class="button" href='#work'>See recent work</a>
 
     </div>
    
@@ -81,13 +86,22 @@
   </section>
 
   <!--/end about-->
+  <div>
+
+  <div class="myprocess">
+    <h2>My Process</h2>
+    <img class="doublediamond" src="/images/Process.svg">
+    <p>I use the Double Diamond framework to tackle UX problems. <br> My process is not always linear but adaptable to the specific brief and timeframe. You never know when you might need to revisit research, conduct more tests or double check on the competition!</p>
+  </div>
+  </div>
 
   <section id="work" class="work">
     <div class=" work container">
-      <div>
+      <div class="worktext">
           <h2>Recent work</h2>
           <p>In April 2019, I completed a 10 week UX Design Immersive course at General Assembly London. Here I developed 3 concept projects and 1 client project. I also designed and coded this website!</p>
-     </div>
+          
+        </div>
       <div class="portfolio">
 
                 <!--/project1-->
@@ -102,11 +116,11 @@
                     <h3>Redesigning The Beauty & the Taste Wine Website</h3>
                     <h6>CLIENT - 2.5 WEEK SPRINT - 4 PERSON TEAM</h6>
                     <h4>Brief</h4>
-                    <p>Reduce bounce rate and improve conversion</p>
+                    <p>Reduce bounce rate and improve conversion.</p>
                     <h4>Solution</h4>
-                    <p>Our biggest challenge was to balance business goals with user goals. User testing was vital at every stage. We redesigned problem pages to focus more on sales and removed the mysticism from the information architecture and content hierarchy. 
+                    <p>We redesigned problem pages to narrow focus and removed the mysticism from the information architecture and content hierarchy. We added a special Taste Profile feature that created personalised search results. 
                     </p>
-                    <a class="button" href="https://medium.com/@anitajoan/redesigning-the-beauty-the-taste-wine-ux-case-study-6034bc875eb3" target="_blank">Read Case Study</a>
+                    <a class="button" href="/Work/TheBeautyandTheTaste.html" >Read more<i class="fas fa-arrow-right"></i></a>
                     
                   </div>
                 </div>
@@ -123,15 +137,15 @@
                     <h3>Gamification of the British Museum Experience</h3>
                     <h6>CONCEPT - 2 WEEK SPRINT - 4 PERSON TEAM</h6>
                     <h4>Brief</h4>
-                    <p>Enhance museum visitor engagement with exhibits</p>
+                    <p>Enhance museum visitor engagement.</p>
                     <h4>Solution</h4>
-                    <p>We consolidated the data gained from contextual inquiry, user interviews and our design studio ideation and we developed a game that connected museum artefacts with a storyline. This turned the museum experience into a scavenger hunt. 
+                    <p>We consolidated the data gained from our extensive research and ideation phases and developed a game that connected museum artefacts with a storyline. This turned the museum experience into an educational scavenger hunt. 
                     </p>
                     
                     
                   </div>
 
-                  <a class="button left" href="https://medium.com/@anitajoan17/gamification-of-the-museum-experience-ux-case-study-2309d5fd16c3" target="_blank">Read Case Study</a>
+                  <a class="button left" href="/Work/TheBritishMuseum.html" >Read more<i class="fas fa-arrow-right"></i></a>
             </div>
               
 
@@ -146,12 +160,12 @@
                       <h3>Plenti Household Stock Manager App</h3>
                       <h6>CONCEPT - 2 WEEK SPRINT - SOLO</h6>
                       <h4>Brief</h4>
-                      <p>To solve my partners problem which was forgetting to buy groceries we often run out of until its too late</p>
+                      <p>Uncover a problem your friend has and develop an app to solve it</p>
               
                       <h4>Solution</h4>
-                      <p>This first project centered around the research and definition phase of UX. I learned how to gain insights from interviews and user testing and translate these into actionable solutions. I developed an app to calculate the use of household essentials and set reminders to buy them. 
+                      <p>This first project centered around the definition and development phase of UX. I learned how to gain insights from interviews and user testing and created an app to calculate the use of household essentials and set reminders to buy them. 
                       </p>
-                    <a class="button" href="https://medium.com/@anitajoan17/plenti-household-manager-app-ux-case-study-2649cf8d2fbe" target="_blank">Read Case Study</a>
+                    <a class="button" href="/Work/Plenti.html" >Read more<i class="fas fa-arrow-right"></i></a>
                   </div>
                </div>
 
@@ -166,11 +180,11 @@
                     <h3>Sunshine Foods Grocery Website</h3>
                     <h6>CONCEPT - 2 WEEK SPRINT - SOLO</h6>
                     <h4>Brief</h4>
-                    <p>Create an online website that establishes trust in fresh products and rewards loyalty while maintaining the local store feel.</p>
+                    <p>Create an online grocery website that establishes trust in fresh products and rewards loyalty.</p>
                     <h4>Solution</h4>
                     <p>I studied the Information Architecture and card sorting data to create an intuitive navigation and explored UX best practises to create a frictionless account creation and checkout flow.  </p>
                     
-                    <a class="button left" href="https://medium.com/@anitajoan17/grocery-e-commerce-website-ux-case-study-691d83e17aaf" target="_blank">Read Case Study</a>
+                    <a class="button left" href="/Work/SunshineFoods.html" >Read more<i class="fas fa-arrow-right"></i></a>
                   </div>
               </div>
 

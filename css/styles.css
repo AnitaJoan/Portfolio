@@ -12,7 +12,7 @@ DEFAULT STYLES
 body{
     
     line-height: 1.6;
-    font-family:'Merriweather', serif;
+    font-family: 'Lato', sans-serif;
     margin-left: auto;
     margin-right: auto;
     width: 1024px;
@@ -25,8 +25,9 @@ img {
 }
 
 .logo{
-  max-width: 10%;
+  width: 10%;
   color: black;
+  cursor: pointer;
 }
 
 .container {
@@ -128,7 +129,7 @@ h4{
   font-weight: 900;
   border-bottom: 1px solid rgb(228, 228, 228);
   margin-bottom:3%;
- 
+  font-family: 'lato', sans-serif;
 }
 
 h6{
@@ -139,7 +140,7 @@ h6{
 }
 
 p{
-  font-size: 1rem;
+  font-size: 1.03rem;
   font-weight: 400;
   color: #353C46;
   text-align: center;
@@ -156,6 +157,13 @@ p{
   margin-top: 0px;
   text-align: center;
   
+}
+
+.myprocess h2{
+  text-align: center;
+}
+.myprocess p{
+  text-align: center;
 }
 
 
@@ -176,7 +184,7 @@ footer p{
   color: #353C46;
   text-align: left;
   margin-top: 0px;
-  font-size: 1rem;
+  font-size: 1.03rem;
 }
 
 .skillbox {
@@ -222,7 +230,7 @@ BUTTON STYLES
   text-decoration: none;
   border-radius: 100px;
   color: #353C46;
-  padding: 16px 24px 16px 24px;
+  padding: 14px 20px;
   max-width: 320px;
   cursor: pointer;
   transition: all .3s ease-out;
@@ -239,7 +247,7 @@ BUTTON STYLES
   text-decoration: none;
   border-radius: 100px;
   color: #353C46;
-  padding: 16px 24px 16px 24px;
+  padding: 14px 20px;
   max-width: 320px;
   cursor: pointer;
   transition: all .3s ease-out;
@@ -369,6 +377,23 @@ ABOUT SECTION
 }
 
 /*****************
+MYPROCESS SECTION
+*****************/
+
+.myprocess{
+  padding: 90px 10%;
+margin-bottom: 3%;
+background-color: #EAECED;
+}
+
+.doublediamond{
+  width:50%;
+  margin: 0 auto;
+  display: block;
+  padding: 3% 0;
+}
+
+/*****************
 WORK SECTION
 *****************/
 
@@ -391,6 +416,9 @@ WORK SECTION
   position: relative;
 }
 
+.worktext{
+  margin: 0 2%;
+}
 
 
 /*****************
@@ -455,6 +483,13 @@ input[type] {
   padding-bottom: 16px;
   font-size: 180%;
   color: #EAECED;
+}
+
+.fa-arrow-right{
+    
+    
+    padding-left: 10px;
+  
 }
 
 #message{
@@ -552,6 +587,16 @@ ABOUT SECTION
 .about img{
   padding-right: 8%;
   max-width: 57px;
+}
+
+
+
+
+.myprocess h2{
+  text-align: left;
+}
+.myprocess p{
+  text-align: left;
 }
 
 /*****************
