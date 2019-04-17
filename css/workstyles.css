@@ -480,9 +480,27 @@ footer{
     display: none;
   }
 
-  .main-banner ul{
+  .container ul{
     display: none;
   }
+
+  .deliverables ul{
+    display: block;
+    margin: 7% 15%; 
+}
+
+.deliverables{
+  flex-direction: column;
+}
+
+.research, .problem, .design, .deliver{
+  width:100%;
+  margin: 0;
+}
+
+.button{
+  font: bold 15px lato, sans-serif;
+}
 
   .projectlinks{
     display: none;
@@ -502,7 +520,7 @@ footer{
   .key{
     display: flex;
     flex-direction: column;
-    
+    margin-bottom:15%;
   }
 
   .leftimg{
@@ -514,7 +532,7 @@ footer{
   }
 
   .righttext{
-    padding: 0% 2% 0% 2%;
+    padding: 2% 2% 0% 2%;
   }
 }
 
