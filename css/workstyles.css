@@ -247,6 +247,10 @@
 INTRO SECTION
 *****************/
 
+.active{
+  color: #FFADC2 !important;
+}
+
 .main-banner{
     background: #353C46;
     padding: 30px 6.39535% 20px;
@@ -315,9 +319,9 @@ PROJECT SECTION
 }
 
 .current {
-  color:#FECC91;
+  color:#FFADC2;
   font-weight: bold;
-  border-bottom: 4px solid #FECC91;
+  border-bottom: 4px solid #FFADC2;
   padding-bottom:9px;
   cursor: default;
 }
