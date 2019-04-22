@@ -321,6 +321,10 @@ PROJECT SECTION
   text-decoration: none;
   font-family: 'lato', sans-serif;
 }
+.link:hover{
+color: #FFADC2;
+    position: relative; 
+}
 
 .current {
   color:#FFADC2;
