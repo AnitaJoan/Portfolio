@@ -147,6 +147,10 @@ p{
   line-height: 1.6rem;
 }
 
+.boldme {
+  font-weight: 600;
+}
+
 .intro p{
   color: #EAECED;
   margin-top: 0px;
