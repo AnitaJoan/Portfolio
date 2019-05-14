@@ -11,7 +11,7 @@ DEFAULT STYLES
 
 body{
     
-    line-height: 1.6;
+    line-height: 150%;
     font-family: 'Lato', sans-serif;
     margin-left: auto;
     margin-right: auto;
@@ -94,7 +94,7 @@ h2{
   font-weight: 700;
   color: #353C46;
   margin-top: -16px;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   
 }
 
@@ -148,7 +148,7 @@ p{
   font-weight: 400;
   color: #353C46;
   text-align: center;
-  line-height: 1.6rem;
+  line-height: 150%;
 }
 
 .boldme {
@@ -201,6 +201,8 @@ footer p{
   text-align: left;
   margin-top: 0px;
   font-size: 1.03rem;
+  padding-left: 3%;
+  padding-top: 3%;
 }
 
 .skillbox {
@@ -254,24 +256,15 @@ BUTTON STYLES
   
 }
 
-.work .button{
-  display: inline-block;
-  margin-top: 24px;
-  text-transform: uppercase;
-  font: bold 16px lato, sans-serif;
-  background: #FECC91;
-  text-decoration: none;
-  border-radius: 100px;
-  color: #353C46;
-  padding: 14px 20px;
-  max-width: 320px;
-  cursor: pointer;
-  transition: all .3s ease-out;
+.portfolio .button{
+
   position: absolute;
   left: 6%;
   bottom: 6%;
   
 }
+
+
 
 
 
@@ -418,6 +411,10 @@ WORK SECTION
   padding: 30px 3%;
 }
 
+.work .uidesign{
+  padding: 0px 3% 30px;
+}
+
 .portfolio{
   display: flex;
   flex-wrap: wrap;
@@ -435,6 +432,32 @@ WORK SECTION
   border-radius: 4px;
   transition: all .3s ease-out;
 }
+
+.dribbble{
+  width: 96%;
+  margin: 5% auto;
+  padding: 2% 2% 4%;
+  text-align: center;
+}
+
+.dribbblework{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.dribbblelogo{
+  margin: 2% auto 1%;
+  width: 10%;
+  display: block;
+}
+
+.dribbbleimg{
+  width: 32%;
+  padding: 2% 0;
+}
+
+
 
 .project:hover{
   
@@ -590,6 +613,14 @@ h2{
   padding-top: 10%;
 }
 
+h3 {
+  padding:0;
+}
+
+h6 {
+  padding:0;
+}
+
 
 
 /*****************
@@ -647,7 +678,17 @@ WORK SECTION
 .project{
   width: 100%;
   margin: 4% 0;
-  padding: 6% 6% 100px;
+  padding: 6% 6%;
+  
+}
+
+.dribbblelogo{
+  width: 30%;
+  
+}
+
+.dribbbleimg{
+  width: 100%;
   
 }
 
