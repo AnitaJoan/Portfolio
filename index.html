@@ -1,223 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Libre+Baskerville:700&display=swap" rel="stylesheet">
-<head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway&family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-138598723-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138598723-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "UA-138598723-1");
+    </script>
 
-  gtag('config', 'UA-138598723-1');
-</script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
 
-<!-- End Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-<!-- Meta -->
+    <!-- Meta -->
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<meta property="og:title" content="Anita Joan UX/UI Portfolio">
-<meta property="og:description" content="I strive to humanise information and digital experiences to help people live productive, 
-achievement-rich lives.">
-<meta property="og:image" content="https://www.anitajoan.com/images/Splash"> 
+    <meta property="og:title" content="Anita Joan Portfolio" />
+    <meta
+      property="og:description"
+      content="I strive to humanise information and digital experiences to help people live productive, 
+achievement-rich lives."
+    />
+    <meta
+      property="og:image"
+      content="https://www.anitajoan.com/images/Splash"
+    />
 
-<!-- End Meta -->
+    <!-- End Meta -->
 
+    <title>Anita Joan UX Portfolio</title>
 
-  <title>Anita Joan UX/UI Portfolio</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./images/Logo_favicon.png"
+    />
 
-  <link rel="shortcut icon" type="image/png" href="../images/Logo_favicon.png"/>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/hover-min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <script>
+      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-  <link rel="stylesheet" href="../css/normalize.css"> 
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/hover-min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
- 
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          if (
+            !document
+              .getElementById("nav-container")
+              .classList.contains("sticky-nav")
+          ) {
+            document.getElementById("nav-container").classList += " sticky-nav";
+          }
+        } else {
+          document.getElementById("nav-container").classList =
+            "blue-container fixed-container";
+        }
+      }
+    </script>
+  </head>
 
-  
-</head>
+  <body>
+    <!-- Nav -->
 
+    <!-- End Nav -->
 
+    <div class="blue-container fixed-container" id="nav-container">
+      <div class="layout-container">
+        <nav class="nav-container">
+          <img
+            class="logo"
+            src="./images/Logo.svg"
+            onclick="location.href='../'"
+          />
+          <ul class="nav">
+            <li><a href="#Projects">PROJECTS</a></li>
+            <li><a href="#About">ABOUT</a></li>
+            <li><a href="#Contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="blue-container">
+      <div class="layout-container">
+        <div id="intro-block">
+          <div>
+            <h1 class="intro-h1-white">Hello, I'm Anita,</h1>
+            <h1 class="intro-h1-pink">
+              experience designer, researcher & strategist.
+            </h1>
 
-<body>
-
-<!-- Nav -->  
-
-  <nav>
-    <ul>
-      <li><a href="#process-section">Process</a></li>
-      <li><a href="#portfolio-section">Portfolio</a></li>
-      <img class="logo" src="/images/Logo_blue.svg" onclick="location.href='../'"/>
-      <li><a href="#about-section">About</a></li>
-      <li><a href="#contact-section">Contact</a></li>
-    </ul>
-  </nav>  
-
-<!-- End Nav -->
-
-<!-- Intro -->
-<div class="behind-content-square">
-  <div id="intro-edit" class="white-content-square">
-    
-          <div class="inner-content intro">
-            <h1 id="center">I'm Anita,<br>a UX/UI Designer</h1>
-            <p id="center">I strive to humanise information and digital experiences to help people live productive, 
-              achievement-rich lives.</p>
-            <p id="center">I have 5 years experience in Visual Design with a recent upskill into UX.<br>Check out my latest projects and articles below.</p>
-            
-
-            <div><a class="button" href='#portfolio-section'>SEE MY PORTFOLIO</a></div>
-              <div>
-            <img id="yellow-triangle" src="/images/Yellow-triangle.svg"/>
-            <img id="green-triangle" src="/images/Green-triangle.svg"/>
-            <img id="pink-triangle" src="/images/Pink-triangle.svg"/>
-            <img id="orange-triangle" src="/images/Orange-triangle.svg"/>
-
+            <div class="rectangle" id="intro-rectangle"></div>
           </div>
-  
-  </div>
-</div>
-<!-- End Intro -->
-
-<!-- Process -->
-<div id="process-section" class="blue-content-square">
-  <div class="inner-content">
-    <h1 id="center">Process & Skills</h1>
-    
-    <p id="center">Design processes are a part of my toolbox just as maps, methods and software are. My process is constantly evolving through practise, research and chatting with people in tech. I think knowing which tools to use and when is key to being a good UX designer. 
-      <img class="processimg" src="/images/double-diamond.svg" alt="Double Diamond Design Process">
-      <div id="skillbox">
-      <div class="skill">UX Design</div>
-      <div class="skill">UI Design</div>
-      <div class="skill">User Research & Testing</div>
-      <div class="skill">Data Synthesis</div>
-      <div class="skill">Wireframing</div>
-      <div class="skill">Prototyping</div>
-      <div class="skill">Adobe CC Suite</div>
-      <div class="skill">Sketch App</div>
-      <div class="skill">InVision</div>
-      <div class="skill">Zeplin</div>
-      <div class="skill">HTML/CSS</div>
+          <div class="lottie-container">
+            <lottie-player
+              src="./comp.json"
+              background="transparent"
+              speed="1"
+              autoplay
+            ></lottie-player>
+          </div>
+        </div>
+      </div>
     </div>
-    </p>
-    
-  </div>
-</div>
-<!-- End Process -->
+    <div class="layout-container">
+      <div class="twocol-block">
+        <div class="left-block-bold">
+          <h1>
+            I've spent 2 years delivering insight driven<span
+              style="color: #ff0f87"
+            >
+              UX, CX and service design experiences.</span
+            >
+          </h1>
+          <div class="rectangle"></div>
+        </div>
 
-<!-- Portfolio -->
-<div id="portfolio-section" class="behind-content-square">
-  <div class="white-content-square">
-    <div class="inner-content">
-        <h1 id="center">Portfolio</h1>
-    <img class="heroimg" src="/images/ktown.jpg" alt="Ktown4u" onclick="location.href='/Work/Ktown4U.html'">
-    <!-- <ul id="description-container"><li class="description">Ktown.com</li><li class="description">Ecommerce Web Design</li><li class="description">April - current</li></ul> -->
-    <img class="heroimg" src="/images/beautytaste.jpg" alt="beautyandthetaste" onclick="location.href='/Work/TheBeautyandTheTaste.html'">
-    <img class="heroimg" src="/images/britishmuseum.jpg" alt="britishmuseum" onclick="location.href='/Work/TheBritishMuseum.html'">
-    </div>
-  </div>
-</div>
-<!-- End Portfolio -->
-
-<!-- About -->
-<div id="about-section" class="blue-content-square">
-  <div class="inner-content">
-    <img class= "headshot" src="/images/me.jpg" alt="Photo of Anita">
-    <h1 id="center">About Me</h1>
-    <p id="center">I’ve been a Graphic Designer for 5 years and for 2 of those years, the Lead of a small design team. I moved into UX/UI design to both remain on the cutting edge of my field and find the ‘why’ behind my designs. I want to design solutions to help people grow, move forward or simply get life admin done.
-</p>
-
-<p id="center">My ideal workplace is one centralised around collaboration where I can grow my UX and UI skills, working on challenging projects with a great team. </p>
-    
-    <div class="interests">
-      <div>
-        <img class= "interestsimg" src="/images/lean-ux.jpg" alt="Photo of Lean UX Book">
-        <h5>READING<br>LEAN UX</h5>
+        <div class="right-block-text">
+          <p>
+            I've been working for a fast paced experience innovation firm, where
+            our client projects are a blend of human centered design thinking,
+            customer insight, business growth and product strategy. As part of a
+            close-knit team and at the heart of project executions, I’ve honed
+            my skills in research, analysis, strategy and validated design
+            execution.
+            <br />
+            <br />My personal ambition is to humanise complex insights to enable
+            nderstanding, alignment and collaboration between teams. I like to
+            do this through 'single source of truth' artefacts (especially maps)
+            and engaging, visual documentation. My methods are grounded in
+            adaptive experience methodologies, behavioural research and
+            qualitative audience validation.
+          </p>
+        </div>
       </div>
-      <div>
-        <img class= "interestsimg" src="/images/ramen.jpg" alt="Photo of Ramen">
-        <h5>EATING<br>RAMEN</h5>
-      </div>
-      <div>
-        <img class= "interestsimg" src="/images/travel.jpg" alt="Photo of Zell Am See">
-        <h5>EXPLORING<br>ZELL AM SEE</h5>
-      </div>
+      <div class="tiles-block" id="Projects">
+        <div class="tile" id="one">
+          <div class="tile-text">
+            <a
+              href="/behavioural-and-needs-based-segmentation-of-an-emerging-us-market.html"
+            >
+              <img
+                class="tile-img"
+                src="/images/User Group_Monochromatic.png" />
+              <p>Needs & Behavioural Segmentation</p>
+              <h2>
+                Uncovering behavioural and needs based segmentation of an
+                emerging US market. (Part 1)
+              </h2>
+              <div class="button">
+                Tell me more<i class="fas fa-arrow-right"></i></div
+            ></a>
+          </div>
+        </div>
 
-      <div>
-        <img class= "interestsimg" src="/images/Archie.png" alt="Photo of Zell Am See">
-        <h5>PHOTOGRAPHING<br>MY CAT ARCHIE</h5>
-      </div>
-
-    </div>
-
-    <div><a class="button" href='#contact-section'>LET'S WORK TOGETHER</a></div>
-  </div>
-</div>
-<!-- End About -->
-
-<!-- Articles -->
-<div class="behind-content-square">
-    <div class="white-content-square">
-      
-            <div id="inner-content-article">
-              <div class="article">
-                  <h3>Latest Article</h3>
-                  <img class= "articleimg" src="/images/hackathon.jpg" alt="Hackathon Article">
-                  <h5>28 May 2019</h5>
-                  <h2>Hackathon for Accessibility</h2>
-                  <p id=left>What can you design in just 4 hours?</p>
-                  <a class="buttonsecondary" href='https://medium.com/@anitajoan/hackathon-for-accessibility-ux-case-study-2f3b9113e9eb' target="_blank">READ ON MEDIUM</a>
+        <div class="tile" id="two">
+          <div class="tile-text">
+            <a
+              href="/building-a-stronger-payments-experience-to-meet-unmet-market-needs.html"
+            >
+              <div class="tile-img">
+                <img src="/images/Piggy bank_Monochromatic.svg" />
               </div>
+              <p>Product Innovation</p>
+              <h2>
+                Building a stronger payments experience to meet unmet market
+                needs. (Part 2)
+              </h2>
+              <div class="button">
+                Tell me more<i class="fas fa-arrow-right"></i></div
+            ></a>
+          </div>
+        </div>
 
-              <div class="article" id="padarticle">
-                  <h3>Latest UI Design</h3>
-                  <img class= "articleimg" src="/images/wedding.jpg" alt="Hackathon Article">
-                  <h5>17 May 2019</h5>
-                  <h2>Daily UI 006<br>User Profile</h2>
-                  <p id=left>Wedding photographer profile </p>
-                  <a class="buttonsecondary" href='https://dribbble.com/anitajoan' target="_blank">SEE ON DRIBBLE</a>
+        <div class="tile" id="three">
+          <div class="tile-text">
+            <a
+              href="/re-imagining-the-merchant-integration-experience-as-part-of-a-single-api-payments-platform.html"
+            >
+              <div class="tile-img">
+                <img src="/images/CPU_Monochromatic.png" />
               </div>
-  
+              <p>Experience Enhancement</p>
+              <h2>
+                Re-imagining the merchant integration experience as part of a
+                single API payments platform.
+              </h2>
+              <div class="button">
+                Tell me more<i class="fas fa-arrow-right"></i></div
+            ></a>
+          </div>
+        </div>
+
+        <div class="tile" id="four">
+          <div class="tile-text">
+            <div class="tile-img">
+              <img src="/images/Handshake_Monochromatic.png" />
             </div>
-    
+            <p>Brand Strategy & Web Design</p>
+            <h2>
+              Differentiating a Private Equity’s brand strategy from a sea of
+              grey competitors.
+            </h2>
+            <div class="button">
+              Case study in progress - ask me about this project
+            </div>
+          </div>
+        </div>
+
+        <div class="tile" id="five">
+          <div class="tile-text">
+            <div class="tile-img">
+              <img src="/images/Web development _Monochromatic.png" />
+            </div>
+            <p>Web Design</p>
+            <h2>
+              Curating a new website and user journey to make the complexity of
+              search intelligence, simple.
+            </h2>
+            <div class="button">
+              Case study in progress - ask me about this project
+            </div>
+          </div>
+        </div>
+
+        <div class="tile" id="six">
+          <div class="tile-text">
+            <div class="tile-img">
+              <img src="/images/Target_Monochromatic.png" />
+            </div>
+            <p>Exploratory Research</p>
+            <h2>
+              Identifying use cases and opportunities for the complex market of
+              procurement.
+            </h2>
+            <div class="button">
+              Case study in progress - ask me about this project
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="twocol-block" id="About">
+        <div class="left-block-bold">
+          <h1>
+            Let's talk personas vs JTBD, the northern lights, whiskey and
+            sourdough.
+          </h1>
+          <div class="rectangle"></div>
+          <h3>STRENGTHS</h3>
+          <p>
+            My biggest strength is making sense out of mess. I love taking
+            complex industries and ideas, pulling them apart and putting them
+            back together in a meaningful, actionable way. I was once described
+            by one manager as analytical, down to earth and curious and this is
+            something I always aim to be.
+          </p>
+          <br />
+          <h3>WORK STYLE</h3>
+          <p>
+            With my experience of project planning and writing project
+            proposals, I gravitate to planning and creating visual lists.
+            <br /><br />
+            I often take a leadership role in projects and love a workplace
+            where I can learn from a great mentor and also practise being a
+            mentor to others. My favourite communication approach is ‘layman
+            terms’ conversation combined with visuals and templates.
+            <br /><br />
+            I strongly believe in the importance of mixing up your environment,
+            perspective and playlist for clear thinking and creativity. I love
+            to work in an office, surrounded by lots of people to bounce ideas
+            with, have a healthy debate and friday drinks.
+          </p>
+          <br />
+          <h3>WHEN I’M NOT AT WORK</h3>
+          <p>
+            I moved to London in 2018 so I could be closer to Europe, northern
+            lights and snow. Even when I’m in Aus, I love snorkelling and
+            heading to Mt Buller. When I’m at home I like to try baking from
+            scratch, mixing classic cocktails or watching the latest
+            documentary.
+          </p>
+        </div>
+
+        <div class="right-image" id="svg">
+          <img
+            src="./images/idea_applications.svg"
+            alt="Brainstorming graphic"
+          />
+        </div>
+      </div>
+      <div class="contact-block" id="Contact">
+        <h1>Contact me</h1>
+        <div class="rectangle"></div>
+
+        <ul class="contact">
+          <li>
+            <i class="fab fas fa-envelope"></i><a>anitajoan17@gmail.com</a>
+          </li>
+          <li>
+            <i class="fab fa-linkedin"></i
+            ><a
+              href="https://www.linkedin.com/in/anita-joan-potucek"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <i class="fab fa-medium"></i
+            ><a href="https://medium.com/@anitajoan" target="_blank"
+              >Medium Blog</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <!-- End Articles -->
+  </body>
 
-</body>
-
-
-<footer>
-    <div id="contact-section" class="blue-content-square">
-        <div class="inner-content" id="footer">
-
-            <ul>
-                <li class="follow-click hvr-float"><i class="fab email fas fa-envelope"></i><a>anitajoan17@gmail.com</a></li>
-                <li class="follow-click hvr-float"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/anita-joan-potucek" target="_blank">LinkedIn</a></li>
-                <li class="follow-click hvr-float"><i class="fab fa-medium"></i><a href="https://medium.com/@anitajoan" target="_blank">Medium Blog</a></li>
-                <li class="follow-click hvr-float"><i class="fab fa-dribbble"></i><a href="https://dribbble.com/anitajoan" target="_blank">Dribbble</a></li>
-              </ul>   
-      <div id="footnote">
-              <h6>Design, layout and code implemented by Anita Joan Potucek.<br>
-        &#9829; Made with love, sweat and cheers. 
-      </h6>
-    <img class="logo" src="/images/Logo_white_30.svg"/>
-  </div>
-    </div>
+  <footer>
+    <div class="layout-container">
+      <div class="footer">
+        <p id="grey">
+          Yes! I designed and coded this portfolio myself.<br />
+          &#9829; Made with love, sweat and cheers.
+        </p>
+        <img class="logo" src="/images/Logo_50.svg" />
+      </div>
     </div>
   </footer>
 
   <script src="./js/jquery.js"></script>
   <script src="./js/main.js"></script>
-
-
-
-
-
 </html>
